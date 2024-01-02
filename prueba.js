@@ -1,15 +1,16 @@
-var nombre = "Fernando";
-var edad = 52;
-var presenteono = "present";
-var apellido = "Herrera";
-var peso = "70";
+//var nombre = "fer";
 
+//var es una variable global y accedemos a ella desde cualquier parte del código
 
+let nombre2;
+//en cambio let solo la utilizamos dentro de un bloque de código
 
-//variables: var, let y const
-//en el caso del peso, el valor de la varible entre comillas representa un string, ya que no le asignamos el tipo de dato
+//ejemplo:
 
+if(true){
+    let nombre= "fer";
+}
 
-//alert("Hola JS" + " " + nombre + " " + edad + " " + apellido);
+console.log(nombre);
 
-console.log("nombre:" + nombre + " " + peso + typeof peso + " " + edad + typeof edad );
+//se comprobó a traves de la consola la diferencia entre var y let

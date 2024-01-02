@@ -1,16 +1,14 @@
-//var nombre = "fer";
+// operadores:
+var suma = 52 + 48;
+var resta = 89-74;
+var division = 45 / 9;
+var multiplicacion = 3 * 12;
+//var incremento = 1++;
+//var decremento = --5;
 
-//var es una variable global y accedemos a ella desde cualquier parte del código
+console.log(suma + " " + division + " " + multiplicacion + " "  + resta );
 
-let nombre2;
-//en cambio let solo la utilizamos dentro de un bloque de código
+var edad = 18;
+var dni = false;
 
-//ejemplo:
-
-if(true){
-    let nombre= "fer";
-}
-
-console.log(nombre);
-
-//se comprobó a traves de la consola la diferencia entre var y let
+console.log(edad >= 18 && dni == false);

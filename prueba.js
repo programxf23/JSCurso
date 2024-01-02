@@ -12,3 +12,5 @@ var edad = 18;
 var dni = false;
 
 console.log(edad >= 18 && dni == false);
+
+//operadores aritmeticos, logicos, relacionales, condicionales

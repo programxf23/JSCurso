@@ -1,8 +1,22 @@
-var aprobe = true;
+//condicional switch
 
-if (aprobe){
-    console.log("Felicitaciones");
+var color = prompt("Ingresa un color");
 
-}else{
-    console.log("Lo siento");
+switch (color) {
+
+    case "rojo":
+        console.log("Rojo");
+        break;
+
+    case "azul":
+        console.log("Azul");
+        break;
+
+    case "verde":
+        console.log("Verde");
+        break;
+
+    default:
+        console.log("Color no valido");
+        break;
 }

@@ -1,8 +1,5 @@
-//ciclo while
+//bucle for
 
-var i = 0;
-
-while(i <=10){
+for(i = 1 ; i <= 5; i++){
   console.log(i);
-  i++;
 }

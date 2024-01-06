@@ -1,8 +1,8 @@
-//bucle do while
+//ejercicio
+var i;
+for (i = 0; i <= 35; i++) {
 
-var i = 0;
+console.log(i);
 
-do {
-    console.log(i);
-    i++;
-} while (i < 10);
+}
+

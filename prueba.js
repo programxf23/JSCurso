@@ -1,6 +1,6 @@
-//ejercicio
+//ejercicio cuenta regresiva
 var i;
-for (i = 0; i <= 35; i++) {
+for (i = 10; i >= 0; i--) {
 
 console.log(i);
 

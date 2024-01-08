@@ -1,19 +1,30 @@
-//arrays
-/*En js los arrays son estructuras de datos que permiten almacenar multiples valores en una sola variable*/
-/*Son estructuras fijas que se declaran y que mantienen su tamaño durante toda la ejecucion del programa.*/
+//Creacion de vectores
 
+//creamos un vector de 3 positions:
 
-//Hay dos tipo de arrayas; los vectores, unidemnsionales y las matrices; bi o multidemnsionales.
+let vector = new Array(3);
+vector[0] = "Fernando";
+vector[1] = "Luis";
+vector[2] = "Mariano";
+vector[3] = "Raul";
 
-let mivector = [1,2,3,4,5];
-console.log(mivector);
-console.log(mivector[2]); //ahora quiero ver solo la posicion donde se encuentra el 3
+console.log(vector);
 
-let miMatriz = [
-    [1,2,3], 
-    [4,5,6], 
-    [7,8,9], 
-];
+//ahora vamos a recorrer todas las posiciones de una matriz con un nuevo arreglo
 
-console.log(miMatriz);
-console.log(miMatriz[2][1]);
+let matriz = new Array(3);
+
+for (let i = 0; i < 3; i++) {
+  matriz[i] = new Array(3);
+} 
+console.log(matriz);
+
+//creo una matriz a partir de varios vectores:
+
+let persona0 = ["Fernando", "Mario", "Jorge"];
+let persona1 = ["Jose", "Julio", "Alberto"];
+let persona2 = ["Cesar", "Juan", "Pablo"];
+
+let matriz2 = [persona0, persona1, persona2];
+
+console.log(matriz2);

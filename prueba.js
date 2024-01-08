@@ -1,17 +1,15 @@
-//fechas
-var fecha = new Date();
+//ejercicios
+/*ingresar por teclado mediante el prompt dos valores,
+determinar cual de los dos es el mayor e informarlo a traves de un alert*/
 
-alert("La fecha de hoy es: " + fecha);
+var num1 = prompt("ingresar el primer numero");
 
-console.log(fecha);
+var num2 = prompt("ingresar el segundo numero");
 
-//funciones especiales
-//enero lo toma como 0 por que comienza a contar a partir de 0
+if (num1 > num2) {
+    alert(num1 + " es mayor que " + num2);
+} else {
+    alert(num2 + " es mayor que " + num1);
+}
 
-var dia = fecha.getDate();
-var mes = fecha.getMonth();
-var anio = fecha.getFullYear();
 
-console.log(dia, mes, anio);
-
-alert("Hoy es el dia: " + dia + " " + mes + 1 + " " + anio);

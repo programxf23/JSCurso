@@ -1,15 +1,43 @@
-//ejercicios
-/*ingresar por teclado mediante el prompt dos valores,
-determinar cual de los dos es el mayor e informarlo a traves de un alert*/
+//ejercicio
+/*ingresar una fecha mediante un prompt , mostrar luego mediante un alert a que dia de la semana corresponde*/
 
-var num1 = prompt("ingresar el primer numero");
+var fechaIngreso = prompt("ingrese una fecha", "mm/dd/yyyy");
 
-var num2 = prompt("ingresar el segundo numero");
+var fecha = new Date(fechaIngreso);
 
-if (num1 > num2) {
-    alert(num1 + " es mayor que " + num2);
-} else {
-    alert(num2 + " es mayor que " + num1);
+var dia = fecha.getDay();
+
+
+var diaSemana;
+
+switch (dia) {
+    case 0:
+    diaSemana = "Domingo";
+    break;
+
+    case 1:
+    diaSemana = "Lunes";
+    break;
+
+    case 2:
+    diaSemana = "Martes";
+    break;
+
+    case 3:
+    diaSemana = "Miercoles";
+    break;
+
+    case 4:
+    diaSemana = "Jueves";
+    break;
+
+    case 5:
+    diaSemana = "Viernes";
+    break;
+
+    case 6:
+    diaSemana = "Sabado";
+    break;
+   
 }
-
-
+alert(diaSemana);

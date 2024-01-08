@@ -1,43 +1,19 @@
-//ejercicio
-/*ingresar una fecha mediante un prompt , mostrar luego mediante un alert a que dia de la semana corresponde*/
-
-var fechaIngreso = prompt("ingrese una fecha", "mm/dd/yyyy");
-
-var fecha = new Date(fechaIngreso);
-
-var dia = fecha.getDay();
+//arrays
+/*En js los arrays son estructuras de datos que permiten almacenar multiples valores en una sola variable*/
+/*Son estructuras fijas que se declaran y que mantienen su tamaño durante toda la ejecucion del programa.*/
 
 
-var diaSemana;
+//Hay dos tipo de arrayas; los vectores, unidemnsionales y las matrices; bi o multidemnsionales.
 
-switch (dia) {
-    case 0:
-    diaSemana = "Domingo";
-    break;
+let mivector = [1,2,3,4,5];
+console.log(mivector);
+console.log(mivector[2]); //ahora quiero ver solo la posicion donde se encuentra el 3
 
-    case 1:
-    diaSemana = "Lunes";
-    break;
+let miMatriz = [
+    [1,2,3], 
+    [4,5,6], 
+    [7,8,9], 
+];
 
-    case 2:
-    diaSemana = "Martes";
-    break;
-
-    case 3:
-    diaSemana = "Miercoles";
-    break;
-
-    case 4:
-    diaSemana = "Jueves";
-    break;
-
-    case 5:
-    diaSemana = "Viernes";
-    break;
-
-    case 6:
-    diaSemana = "Sabado";
-    break;
-   
-}
-alert(diaSemana);
+console.log(miMatriz);
+console.log(miMatriz[2][1]);

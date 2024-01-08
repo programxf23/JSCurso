@@ -1,30 +1,30 @@
-//Creacion de vectores
+//arrays 3
+//recorridos
 
-//creamos un vector de 3 positions:
+let paises = ["Argentina", "Brasil", "Mexico", "Colombia"];
 
-let vector = new Array(3);
-vector[0] = "Fernando";
-vector[1] = "Luis";
-vector[2] = "Mariano";
-vector[3] = "Raul";
+for (let i = 0; i < paises.length; i++) {
+  console.log(paises[i]);
 
-console.log(vector);
+  //nos olvidamo de saber el contenido total del vector y solo colocamos el metodo length
 
-//ahora vamos a recorrer todas las posiciones de una matriz con un nuevo arreglo
+  //busco un pais en especial:
 
-let matriz = new Array(3);
+  if (paises[i] == "Argentina") {
+    console.log("Vamos bien");
+  } 
+}
 
-for (let i = 0; i < 3; i++) {
-  matriz[i] = new Array(3);
-} 
-console.log(matriz);
+//matriz que voy a recorrer de manera secuancial mediante dos for, uno para el recorrido de la filas y otro
+//para el recorrida de las columnas
 
-//creo una matriz a partir de varios vectores:
+let paisesEuropa = [["España", "Portugal"],
+                    ["Italia", "Rusia"],
+                    ["Francia", "Alemania"]];
 
-let persona0 = ["Fernando", "Mario", "Jorge"];
-let persona1 = ["Jose", "Julio", "Alberto"];
-let persona2 = ["Cesar", "Juan", "Pablo"];
+for (let f = 0; f < paisesEuropa.length; f++) {
+    for (let c = 0; c < paisesEuropa[f].length; c++) {
 
-let matriz2 = [persona0, persona1, persona2];
-
-console.log(matriz2);
+        console.log(paisesEuropa[f][c]);
+    }
+}

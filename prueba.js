@@ -1,16 +1,17 @@
-//prompt
+//fechas
+var fecha = new Date();
 
-//window.prompt("Hola fer"); (para pregunta)
+alert("La fecha de hoy es: " + fecha);
 
+console.log(fecha);
 
-/*var respuesta = window.prompt("Hola fer");  (para respuesta)
-alert(respuesta);*/
+//funciones especiales
+//enero lo toma como 0 por que comienza a contar a partir de 0
 
-var confirmacion = window.confirm("quiere confirmar"); //respuesta predeterminada
+var dia = fecha.getDate();
+var mes = fecha.getMonth();
+var anio = fecha.getFullYear();
 
+console.log(dia, mes, anio);
 
-if  (confirmacion === true){
-    alert("Muchas gracias");
-}else 
-alert("Saludos");
-
+alert("Hoy es el dia: " + dia + " " + mes + 1 + " " + anio);

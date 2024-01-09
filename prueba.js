@@ -1,63 +1,24 @@
-/*En js los arrays tienen una variedad de metodos incorporados que permiten diversas operaciones
- en los elementos contenidos en el array.
- Los metodos de arrays en js pertenecen a la clase Array
- La clase Array es una clase propia de js que tiene tantos metodos como propiedades
- para trabajar co arrays de manera eficiente.
- Hay distintos tipos de metodos: para agregar y eliminar, para modificar, buscar
- y filtrar, transformar y ordenar, informacion sobre el array, reducir, acumular valores.
-*/
+/*En js, las funciones son bloques de codigo reutilizables que pueden
+ejecutar una tarea especifica.
+Permiten encapsular una logica particular, recibiendo datos como parametros
+y devolviendo un resultado (retorno)
+Son elementos fundamentales para orgenizar y modular el codigo*/
 
- //metodo agregar
+function saludar() {
 
- let frutas = ["manzana", "banana", "mandarina"];
- frutas.push("uva");
+console.log("Hola, te estoy saludando...");
+}
 
- console.log(frutas);
+saludar();
 
 
- //elimina el ultimo item agregado
+//ejemplo con parametros
 
- frutas.pop();
- console.log(frutas);
+function sumar(num1, num2) {
+  let resultado = num1 + num2;
+  console.log(resultado);
 
-
- //eliminar el primer elemente del array
- frutas.shift();
- console.log(frutas);
-
-
-
-
- //elemento que queremos agregar al principio del array
- frutas.unshift("uva");
- console.log(frutas);
-
-
- //filtramos la busqueda
- let frutasConA = frutas.filter(frutas => frutas.includes("v"));
- console.log(frutasConA);
-
-
-
-//concatenar
-
- let frutas1 = ["manzana", "banana", "mandarina"];
- let frutas2 = ["naranja", "mango"];
-
-let todasLasFrutas = frutas1.concat(frutas2);
-console.log(todasLasFrutas);
-
-
-//cambiar el orden
-
-todasLasFrutas.reverse();
-console.log(todasLasFrutas);
-
-
-//ordena alfabeticamente
-
-todasLasFrutas.sort();
-console.log(todasLasFrutas);
-
-
+  return resultado;
+}
+sumar(15, 20);
 

@@ -1,30 +1,63 @@
-//arrays 3
-//recorridos
+/*En js los arrays tienen una variedad de metodos incorporados que permiten diversas operaciones
+ en los elementos contenidos en el array.
+ Los metodos de arrays en js pertenecen a la clase Array
+ La clase Array es una clase propia de js que tiene tantos metodos como propiedades
+ para trabajar co arrays de manera eficiente.
+ Hay distintos tipos de metodos: para agregar y eliminar, para modificar, buscar
+ y filtrar, transformar y ordenar, informacion sobre el array, reducir, acumular valores.
+*/
 
-let paises = ["Argentina", "Brasil", "Mexico", "Colombia"];
+ //metodo agregar
 
-for (let i = 0; i < paises.length; i++) {
-  console.log(paises[i]);
+ let frutas = ["manzana", "banana", "mandarina"];
+ frutas.push("uva");
 
-  //nos olvidamo de saber el contenido total del vector y solo colocamos el metodo length
+ console.log(frutas);
 
-  //busco un pais en especial:
 
-  if (paises[i] == "Argentina") {
-    console.log("Vamos bien");
-  } 
-}
+ //elimina el ultimo item agregado
 
-//matriz que voy a recorrer de manera secuancial mediante dos for, uno para el recorrido de la filas y otro
-//para el recorrida de las columnas
+ frutas.pop();
+ console.log(frutas);
 
-let paisesEuropa = [["España", "Portugal"],
-                    ["Italia", "Rusia"],
-                    ["Francia", "Alemania"]];
 
-for (let f = 0; f < paisesEuropa.length; f++) {
-    for (let c = 0; c < paisesEuropa[f].length; c++) {
+ //eliminar el primer elemente del array
+ frutas.shift();
+ console.log(frutas);
 
-        console.log(paisesEuropa[f][c]);
-    }
-}
+
+
+
+ //elemento que queremos agregar al principio del array
+ frutas.unshift("uva");
+ console.log(frutas);
+
+
+ //filtramos la busqueda
+ let frutasConA = frutas.filter(frutas => frutas.includes("v"));
+ console.log(frutasConA);
+
+
+
+//concatenar
+
+ let frutas1 = ["manzana", "banana", "mandarina"];
+ let frutas2 = ["naranja", "mango"];
+
+let todasLasFrutas = frutas1.concat(frutas2);
+console.log(todasLasFrutas);
+
+
+//cambiar el orden
+
+todasLasFrutas.reverse();
+console.log(todasLasFrutas);
+
+
+//ordena alfabeticamente
+
+todasLasFrutas.sort();
+console.log(todasLasFrutas);
+
+
+

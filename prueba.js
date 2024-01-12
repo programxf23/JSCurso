@@ -30,15 +30,15 @@ el promedio de habilidades.
 
 
  //arrays para los nombre
- let pokemones = ["charmander", "pikachu", "bubasur", "squirrel"];
+ let pokemones = ['charmander', 'pikachu', 'bubasur', 'squirrel'];
 
  //matriz de habilidades
 
  let habilidades = [
     [85, 90, 75], //charmander
     [95, 59, 89], //pikachu
-    [90, 80, 70], // bubasur
-    [72, 88, 91], //squirrel
+    [50, 60, 70], // bubasur
+    [72, 88, 91] //squirrel
  ];
 
    function calcularHabilidades(habilidades) {
@@ -47,7 +47,7 @@ el promedio de habilidades.
     for (let i = 0; i < habilidades.length; i++) {
 
         let fila = habilidades[i];
-        let suma = fila.reduce((total, habilidad) => total + habilidad,0) //el acumulador arranca en 0
+        let suma = fila.reduce((total, habilidad) => total + habilidad,0); //el acumulador arranca en 0
 
         //calculamos el promedio
         promedios[i] = suma / fila.length;
@@ -62,7 +62,7 @@ el promedio de habilidades.
 
          for (let i = 0; i <promedios.length; i++) {
             if (promedios[i] >= 70) {
-                console.log("El pokemon: " + pokemones[i] + " " + "supera el promedio con: "  + promedios[i]);
+                console.log("El pokemon: "+ pokemones[i] + " " + "supera el promedio con: "+ promedios[i]);
             } else {
                console.log("El pokemon: " + pokemones[i] + " " + "No supera el promedio con: "  + promedios[i]);
             }
@@ -71,7 +71,7 @@ el promedio de habilidades.
 
       //el promedio lo guardamos en una variable para luego poder invocar los resultados
        let promedios = calcularHabilidades(habilidades);
-       evaluarAptitud(promedios, pokemones);
+       evaluarAptitud(pokemones, promedios);
 
 
 
